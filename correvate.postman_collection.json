@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "3ec8b399-edce-4448-ba9f-e1fd9995b2bd",
+		"name": "correvate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "upload and get zip file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": [
+								"/Users/zakirhussainbashask/Downloads/_zakir photo.jpg",
+								"/Users/zakirhussainbashask/Downloads/15gnew.pdf"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/files/zipfiles",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"files",
+						"zipfiles"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
